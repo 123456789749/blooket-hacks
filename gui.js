@@ -194,8 +194,8 @@ details summary ~ * {
                             },
                             body: await encodeValues({
                                 name: x.name,
-                                addedTokens: 250,
-                                addedXp: 300
+                                addedTokens: 25000000000,
+                                addedXp: 300000000000
                             }, e.secret)
                         });
                         fetch("https://api.blooket.com/api/users/add-rewards", {
@@ -207,8 +207,8 @@ details summary ~ * {
                             },
                             body: await encodeValues({
                                 name: x.name,
-                                addedTokens: 250,
-                                addedXp: 300
+                                addedTokens: 2500000000,
+                                addedXp: 30000000000
                             }, e.secret)
                         }).then(() => alert('Added daily rewawrds!')).catch(() => alert('There was an error when adding rewards!'));;
                     }).catch(() => alert('There was an error encoding requests!'));
@@ -223,13 +223,13 @@ details summary ~ * {
             'Spam Open Boxes': () => {
                 let box = prompt(`Which box do you want to open? (e.g. Space)`);
                 let boxes = {
-                    safari: 25,
-                    aquatic: 20,
-                    bot: 20,
-                    space: 20,
-                    breakfast: 15,
-                    medieval: 15,
-                    wonderland: 15
+                    safari: 0,
+                    aquatic: 0,
+                    bot: 0,
+                    space: 0,
+                    breakfast: 0,
+                    medieval: 0,
+                    wonderland: 0
                 }
                 if (!Object.keys(boxes).includes(box.toLowerCase())) return alert('I could not find that box!');
                 let amount = prompt('How many boxes do you want to open?');
